@@ -1,8 +1,7 @@
 'use client'
 
-import { Analytics } from "@/utils/analytics"
 import { Card, BarChart } from "@tremor/react"
-import { ArrowDown, ArrowDownRight, ArrowRight, ArrowUpRight } from "lucide-react"
+import { ArrowDownRight, ArrowRight, ArrowUpRight } from "lucide-react"
 import ReactCountryFlag from "react-country-flag"
 interface AnalyticsDashboardProps {
     avgVisitorsPerDay: string

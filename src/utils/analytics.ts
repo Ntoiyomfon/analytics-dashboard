@@ -1,6 +1,6 @@
 import { redis } from "@/libs/redis"
 import { getDate } from "@/utils"
-import { formatDate, parse } from "date-fns"
+import { parse } from "date-fns"
 
 type AnalyticsArgs = {
     retention?: number
