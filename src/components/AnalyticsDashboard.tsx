@@ -64,15 +64,17 @@ const AnalyticsDashboard = ({
 
       <Card className="flex flex-col sm:grid grid-cols-4 gap-6">
         <h2 className="w-full text-dark-tremor-content-strong text-center sm:left-left font-semibold text-xl">
-            Week's Top Visitors:
+            Week Top Visitors:
         </h2>
         <div className="col-span-3 flex items-center justify-between flex-wrap gap-8">
             {topCountries?.map(([countryCode, number]: [string, number]) => {
-                return <div className="items-center flex gap-3 text-dark-tremor-content-strong">
+                return(
+                    <div className="items-center flex gap-3 text-dark-tremor-content-strong">
                     <p className="hidden sm:block text-tremor-content">{countryCode}</p>
                     <ReactCountryFlag className="text-5xl sm:text-3xl" svg countryCode={countryCode}/>
                     <p className="text-tremor-content sm:text-dark-tremor-content-strong">{number}</p>
                 </div>
+                )
             })}
         </div>
       </Card>

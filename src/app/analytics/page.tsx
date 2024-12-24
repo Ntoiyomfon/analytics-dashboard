@@ -1,5 +1,5 @@
 import AnalyticsDashboard from "@/components/AnalyticsDashboard"
-import { Analytics, analytics } from "@/utils/analytics"
+import { analytics } from "@/utils/analytics"
 import { getDate } from '@/utils'
 
 const Page = async () => {
