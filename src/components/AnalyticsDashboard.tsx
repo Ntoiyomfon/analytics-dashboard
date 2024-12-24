@@ -68,13 +68,16 @@ const AnalyticsDashboard = ({
         </h2>
         <div className="col-span-3 flex items-center justify-between flex-wrap gap-8">
             {topCountries?.map(([countryCode, number]: [string, number]) => {
-                return(
-                    <div className="items-center flex gap-3 text-dark-tremor-content-strong">
-                    <p className="hidden sm:block text-tremor-content">{countryCode}</p>
-                    <ReactCountryFlag className="text-5xl sm:text-3xl" svg countryCode={countryCode}/>
-                    <p className="text-tremor-content sm:text-dark-tremor-content-strong">{number}</p>
+               return (
+                <div 
+                  key={countryCode} // Add a unique key, using `countryCode` (or another unique identifier)
+                  className="items-center flex gap-3 text-dark-tremor-content-strong"
+                >
+                  <p className="hidden sm:block text-tremor-content">{countryCode}</p>
+                  <ReactCountryFlag className="text-5xl sm:text-3xl" svg countryCode={countryCode} />
+                  <p className="text-tremor-content sm:text-dark-tremor-content-strong">{number}</p>
                 </div>
-                )
+              );   
             })}
         </div>
       </Card>
