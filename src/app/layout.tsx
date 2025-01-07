@@ -1,11 +1,11 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { Geist } from "next/font/google";
+import { Geologica } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 
-const geist = Geist({ subsets: ["latin"] });
+const geist = Geologica({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
